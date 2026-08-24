@@ -5,14 +5,54 @@
 
 .cabecalho{
     padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #85ddff;
 }
 
 .cartao{
-    width: 266px;
-    height: 200px;   
+    width: 360px;
+    height: 260px;   
 }
 
-.cartao-frente. .cartao-verso{
+. cartao-imagem {
     width: 100%;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e5ff85;
+}
+
+main{
+    flex: 1;
+}
+
+.cabecalho-link{
+    color: rgb(219, 58, 252);
+    text-decoration: none;
+}
+
+h1{
+    color: rgb(219, 58, 252);
+    font-size: 28px;
+}
+
+footer{
+    background-color: #85ddff;
+     padding: 15px 25px;
+     color: #32bbf1
+}
+
+.cartao-interno {
+    position: relative;
+}
+
+.cartao-frente, .cartao-verso{
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
